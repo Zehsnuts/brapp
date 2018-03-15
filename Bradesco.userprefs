@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Content/ContentAnimation.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Content/ContentManager.cs" Line="37" Column="3" />
+      <File FileName="Assets/Scripts/ButtonTeleport.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buttons/ButtonScalling.cs" Line="24" Column="80" />
+      <File FileName="Assets/Scripts/ButtonInstance.cs" Line="1" Column="1" />
+      <File FileName="Assets/ScrollTest/InfinityScroll-master/Editor/Scripts/ScrollEditorScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buttons/ButtonSnap.cs" Line="54" Column="3" />
+      <File FileName="Assets/Scripts/Content/ContentAnimation.cs" Line="17" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
