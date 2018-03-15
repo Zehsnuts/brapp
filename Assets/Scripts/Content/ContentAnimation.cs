@@ -12,8 +12,13 @@ public class ContentAnimation : MonoBehaviour {
 			transform.GetComponent<Animator> ();
 	}
 
-	public void PlayAnimator()
+	public void OpenContent()
 	{
-		//_animator.Play ();
+		_animator.Play ("OpenContent");
+	}
+
+	public void CloseContent()
+	{
+		_animator.Play ("CloseContent");
 	}
 }

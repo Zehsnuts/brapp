@@ -10,17 +10,18 @@ public class ContentManager : MonoBehaviour
 	}
 
 	public List<Transform> contents;
-	private contentList _currentContent;
+	private contentList _currentContentList;
+
+	private Transform _currentContent;
 
 	void Awake()
 	{
-		foreach(Transform t in contents)
-			t.gameObject.SetActive(false);
+		
 	}
 
 	void Start()
 	{
-		_currentContent = contentList.None;
+		_currentContentList = contentList.None;
 	}
 
 	public void ChangeContent(string btnName)
@@ -31,13 +32,18 @@ public class ContentManager : MonoBehaviour
 
 	public void ContentAnimation(string name)
 	{
-		if (name == _currentContent.ToString ())
+		Transform content = transform.Find (name);		
+		Debug.Log (name);
+
+		if (content == _currentContent)
 			return;
 
-		//transform.Find ("btn_" + _currentContent.ToString ()).gameObject.SetActive(false);
-		transform.Find (name).gameObject.SetActive (true);
+		if(_currentContent!=null)
+			_currentContent.GetComponent<Animator> ().Play ("CloseContent");
 
+		_currentContent = content;
 
+		_currentContent.GetComponent<Animator> ().Play ("OpenContent");
 	}
 
 }

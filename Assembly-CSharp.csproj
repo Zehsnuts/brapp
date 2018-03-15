@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Buttons\ButtonScalling.cs" />
      <Compile Include="Assets\Scripts\Buttons\ButtonSnap.cs" />
      <Compile Include="Assets\Scripts\Buttons\CloseApplication.cs" />
+     <Compile Include="Assets\Scripts\Buttons\PopUp\PopUpButton.cs" />
      <Compile Include="Assets\Scripts\ButtonTeleport.cs" />
      <Compile Include="Assets\Scripts\Content\ContentAnimation.cs" />
      <Compile Include="Assets\Scripts\Content\ContentManager.cs" />
@@ -376,10 +377,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="OSCsharp">
- <HintPath>/Users/ilha/Documents/App Bradesco/Unity Mockup/Bradesco/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
+ <HintPath>/Users/ilha/Documents/AppBradesco/UnityMockup/Bradesco/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
  </Reference>
  <Reference Include="TUIOsharp">
- <HintPath>/Users/ilha/Documents/App Bradesco/Unity Mockup/Bradesco/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
+ <HintPath>/Users/ilha/Documents/AppBradesco/UnityMockup/Bradesco/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Users/ilha/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
