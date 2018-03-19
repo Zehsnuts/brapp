@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ButtonInstance.cs" />
+     <Compile Include="Assets\Scripts\Buttons\ButtonMenu.cs" />
      <Compile Include="Assets\Scripts\Buttons\ButtonScalling.cs" />
      <Compile Include="Assets\Scripts\Buttons\ButtonSnap.cs" />
      <Compile Include="Assets\Scripts\Buttons\CloseApplication.cs" />

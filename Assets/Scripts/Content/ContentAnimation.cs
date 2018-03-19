@@ -6,7 +6,13 @@ public class ContentAnimation : MonoBehaviour {
 
 	private Animator _animator;
 
-	void Awake()
+	void Start()
+	{
+		if (_animator == null)
+			transform.GetComponent<Animator> ();
+	}
+
+	void OnEnabled()
 	{
 		if (_animator == null)
 			transform.GetComponent<Animator> ();
