@@ -151,6 +151,7 @@ daa565a4bc00993781a7c9f74a405633 Assembly-CSharp.dll:TouchScript.Gestures.FlickG
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Core.TouchManagerInstance
 cdcc95266fae47eb9736a554975c94e4 Assembly-CSharp.dll:.ExamplesList
 5c1e60c21f2b0fc07f40e01adff98854 Assembly-CSharp.dll:UnityEngine.UI.Extensions.BoundTooltipTrigger
+b80886bc44e36b10c30c170a38058631 Assembly-CSharp.dll:.PopUpButton
 c5077213747d90cc7a3e8f29cd9d3487 Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIMesh
 ffcb82fccd9242220f3d88cf27f8bfe3 Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.Clustered.ClusteredPinnedTransformGesture
 47aa7529825d58580b94dabd237f34b7 Assembly-CSharp.dll:TouchScript.Examples.Portal.Planet
@@ -294,4 +295,3 @@ fad27ea0ea956c43ddd9bb79445f68f0 Assembly-CSharp.dll:.InfiniteHorizontalScroll
 354799ab7253e8d83914c27d4dc65f56 Assembly-CSharp.dll:TouchScript.Examples.Portal.Spawner
 ffcb82fccd9242220f3d88cf27f8bfe3 Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.PinnedTransformGesture
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.LayerManager
-b80886bc44e36b10c30c170a38058631 Assembly-CSharp.dll:.PopUpButton
