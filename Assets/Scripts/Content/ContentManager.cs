@@ -14,11 +14,6 @@ public class ContentManager : MonoBehaviour
 
 	private Transform _currentContent;
 
-	void Awake()
-	{
-		
-	}
-
 	void Start()
 	{
 		_currentContentList = contentList.None;
@@ -38,12 +33,12 @@ public class ContentManager : MonoBehaviour
 		if (content == _currentContent)
 			return;
 
-		if(_currentContent!=null)
-			_currentContent.GetComponent<Animator> ().Play ("CloseContent");
+		if (_currentContent != null)
+			_currentContent.GetComponent<ContentAnimation> ().CloseContent ();
 
 		_currentContent = content;
 
-		_currentContent.GetComponent<Animator> ().Play ("OpenContent");
+		_currentContent.GetComponent<ContentAnimation> ().OpenContent ();
 	}
 
 }

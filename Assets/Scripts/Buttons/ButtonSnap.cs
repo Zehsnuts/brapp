@@ -18,6 +18,7 @@ public class ButtonSnap : MonoBehaviour
 
 		initialDistanceButtonToCenter = Vector3.Distance(button.position, menuCenter.position);
 		FindObjectOfType<ContentManager> ().ChangeContent (targetButton.name);
+		FindObjectOfType<SideMenuManager> ().CloseSideMenu ();
 	}
 
 	public float speed = 0f;

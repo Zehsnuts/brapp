@@ -5,26 +5,70 @@ using UnityEngine;
 public class ContentAnimation : MonoBehaviour {
 
 	private Animator _animator;
+	private Animator _subMenuAnimator;
+	private bool _hasSubMenu;
+	private bool _isSubMenuOpen;
+	public GameObject subMenu;
+	public GameObject content;
 
 	void Start()
 	{
+		if (subMenu != null) 
+		{
+			_hasSubMenu = true;
+			_subMenuAnimator = subMenu.GetComponent<Animator> ();
+			_isSubMenuOpen = false;
+		}
+		else
+			_hasSubMenu = false;
+
 		if (_animator == null)
-			transform.GetComponent<Animator> ();
+			content.GetComponent<Animator> ();
 	}
 
-	void OnEnabled()
+	void CheckAnimators()
 	{
 		if (_animator == null)
-			transform.GetComponent<Animator> ();
+			_animator = content.GetComponent<Animator> ();
+
+		if (subMenu != null) 
+			_subMenuAnimator = subMenu.GetComponent<Animator> ();
 	}
 
 	public void OpenContent()
 	{
-		_animator.Play ("OpenContent");
+		CheckAnimators ();
+
+		if (_hasSubMenu && !_isSubMenuOpen) 
+		{
+			_subMenuAnimator.Play ("OpenContent");
+			_animator.Play ("CloseContent");
+			_isSubMenuOpen = true;
+		}
+		else 
+		{
+			if (_hasSubMenu) 
+			{
+				_subMenuAnimator.Play ("CloseContent");
+				_isSubMenuOpen = false;
+			}
+			
+			_animator.Play ("OpenContent");
+		}
 	}
 
 	public void CloseContent()
 	{
-		_animator.Play ("CloseContent");
+		CheckAnimators ();
+		if (_hasSubMenu && _isSubMenuOpen) 
+		{
+			_subMenuAnimator.Play ("CloseContent");
+			_isSubMenuOpen = false;
+		} 
+		else 
+		{
+			_animator.Play ("CloseContent");
+			_isSubMenuOpen = false;
+		}
 	}
 }
