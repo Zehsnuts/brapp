@@ -12,23 +12,24 @@ public class ButtonScalling : MonoBehaviour {
 		if (image == null)
 			image = transform.Find ("Image").transform;
 		
-		float dist = Vector2.Distance(parent.transform.position, transform.position);
-
-		image.localScale = new Vector3(1 - (dist/100),1 - (dist/100),1 - (dist/100));
+		ChangeSize ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		ChangeSize ();
+	}
+
+	void ChangeSize()
+	{
 		float dist = Vector2.Distance(parent.transform.position, transform.position);
 		Vector3 dif = new Vector3 ((1 - (dist/1000)), 1 - (dist/1000), 1 - (dist/1000));
-		if (dif.y >= 0.5f)
+		if (dif.y >= 0.3f)
 			image.localScale = dif;
 
-		if (dif.y < 0.5f)
-			image.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
-			
-
+		if (dif.y < 0.3f)
+			image.localScale = new Vector3 (0.3f, 0.3f, 0.3f);
 	}
 
 	public void assingButtonAsTarget()

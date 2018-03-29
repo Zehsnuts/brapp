@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\Buttons\ButtonSnap.cs" />
      <Compile Include="Assets\Scripts\Buttons\CloseApplication.cs" />
      <Compile Include="Assets\Scripts\Buttons\PopUp\PopUpButton.cs" />
+     <Compile Include="Assets\Scripts\Buttons\SideMenu\InfiniteScrollingButton.cs" />
+     <Compile Include="Assets\Scripts\Buttons\SideMenu\InfiniteScrollingManager.cs" />
      <Compile Include="Assets\Scripts\Buttons\SideMenu\SideMenuManager.cs" />
      <Compile Include="Assets\Scripts\Buttons\SubMenuButton.cs" />
      <Compile Include="Assets\Scripts\ButtonTeleport.cs" />
