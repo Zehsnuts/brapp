@@ -13,10 +13,14 @@ public class ButtonScalling : MonoBehaviour {
 			image = transform.Find ("Image").transform;
 		
 		ChangeSize ();
-	}
-	
-	// Update is called once per frame
+	}	
+
 	void Update () 
+	{
+		ChangeSize ();
+	}
+
+	void LateUpdate()
 	{
 		ChangeSize ();
 	}

@@ -65,6 +65,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.ReorderableListElement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.RaycastMask
 2444c8feb6efebfde2f76cc3d824bf37 Assembly-CSharp.dll:UnityEngine.UI.Extensions.HorizontalScrollSnap
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.InfiniteScrollingManager
 bd927de58391934c4b4af8c21c273716 Assembly-CSharp.dll:TouchScript.Examples.Cube.LayerDelegate
 d30b6110947d63791771ef8e8c2a83ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.ShineEffect
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -149,6 +150,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 d01076a6a1818355740b0f2f03649d29 Assembly-CSharp.dll:TouchScript.Examples.Photos.Container
 daa565a4bc00993781a7c9f74a405633 Assembly-CSharp.dll:TouchScript.Gestures.FlickGesture
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Core.TouchManagerInstance
+4b96c45f795a5c2f1f672dd23043c63a Assembly-CSharp.dll:.InfiniteScrollingButton
 cdcc95266fae47eb9736a554975c94e4 Assembly-CSharp.dll:.ExamplesList
 5c1e60c21f2b0fc07f40e01adff98854 Assembly-CSharp.dll:UnityEngine.UI.Extensions.BoundTooltipTrigger
 b80886bc44e36b10c30c170a38058631 Assembly-CSharp.dll:.PopUpButton
@@ -178,6 +180,7 @@ b4277c999b1b49aa631b87f6a12b3055 Assembly-CSharp.dll:UnityEngine.UI.Extensions.U
 161d81543a4f3cb98ac65429a6a32ff3 Assembly-CSharp.dll:UnityEngine.UI.Extensions.BoundTooltipItem
 41025111809cdafffa61c11f909ed68e Assembly-CSharp.dll:UnityEngine.UI.Extensions.UILineRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.RescaleDragPanel
+eaef548a4b045e61eb59e51803a129f8 Assembly-CSharp.dll:.SubMenuButton
 5eec022e3d119fd34f4dba2db53fca00 Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIPolygon
 d63f24e7e506a0314a8cd3b2b9341d82 Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIWindowBase
 2444c8feb6efebfde2f76cc3d824bf37 Assembly-CSharp.dll:UnityEngine.UI.Extensions.VerticalScrollSnap
@@ -189,7 +192,7 @@ d30c26c960d908782ac91fb8e79aeba8 Assembly-CSharp.dll:UnityEngine.UI.Extensions.S
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.ExampleSelectable
 f1c2b748da64b3f847088e3a9438cd8e Assembly-CSharp.dll:UnityEngine.UI.Extensions.HsvSliderPicker
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ContentAnimation
+b6891bd96a2ec8a28010963be77d905e Assembly-CSharp.dll:.ContentAnimation
 42bbd8dadc66de980ed7ab69a5fd1258 Assembly-CSharp.dll:TouchScript.Gestures.PressGesture
 71576082ce86792c07607fafd8e9952a Assembly-CSharp.dll:UnityEngine.UI.Extensions.HoverTooltip
 96de4fb640702f27e183c72c83d494a6 Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIScrollToSelectionXY
@@ -198,6 +201,7 @@ ae5121fb0eea49442b0020b544efcc18 Assembly-CSharp.dll:UnityEngine.EventSystems.Ga
 1aa016deed28e92885c26442ad8e672a Assembly-CSharp.dll:UnityEngine.UI.Extensions.SaveLoadMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIAdditiveEffect
 79aa27192ea7606a8a69cb4d7c91ae7a Assembly-CSharp.dll:UnityEngine.UI.Extensions.UIParticleSystem
+f488b9e962888b4d8b7feba0fe6d17f5 Assembly-CSharp.dll:.ButtonMenu
 0fd6aafde779927819d0d509e0bdfec9 Assembly-CSharp.dll:TouchScript.Gestures.MetaGesture
 2afc6f45c6441e8feccf982e7daa6e81 Assembly-CSharp.dll:UnityEngine.UI.Extensions.HSVPicker
 9b1e59a9ff14861648378f7394d4114b Assembly-CSharp.dll:UnityEngine.UI.Extensions.ImageExtended
@@ -248,6 +252,7 @@ a36d6541b3ca9c61d7938dcd4cc9cdf0 Assembly-CSharp.dll:UnityEngine.UI.Extensions.L
 cde49f8b65b330a3d5a092cd8f503d03 Assembly-CSharp.dll:UnityEngine.UI.Extensions.InputFieldEnterSubmit
 fad27ea0ea956c43ddd9bb79445f68f0 Assembly-CSharp.dll:.InfiniteVerticalScroll
 637d9c63f1b13e88562f25a79473a1f9 Assembly-CSharp.dll:UnityEngine.UI.Extensions.TileSizeFitter
+dafaf104498cc873c2b5e30571142e81 Assembly-CSharp.dll:.SideMenuManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule

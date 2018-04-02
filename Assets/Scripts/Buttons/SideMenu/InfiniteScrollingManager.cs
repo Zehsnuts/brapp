@@ -10,44 +10,44 @@ public class InfiniteScrollingManager : MonoBehaviour
 
 	float lastYPosition;
 
-	List<Transform> topButtonList = new List<Transform>();
-	List<Transform> bottomButtonList = new List<Transform>();
+	List<Transform> ButtonList = new List<Transform>();
+
+	void Start()
+	{
+		lastYPosition = transform.position.y;
+	}
 
 	public void PullFirstButtonDown(Transform btn)
-	{			
-
+	{	
 		var btnScript = btn.GetComponent<InfiniteScrollingButton> ();
 
-		if (btn == currentButton || btnScript.nextButton == btn)
-			return;
-
-		currentButton = btn;
-
-		var b = Instantiate (currentButton,transform);
-		b.SetAsLastSibling ();
-
+		InstantiateButton (btn,"");
 	}
 
 	public void PullLastButtonUp(Transform btn)
 	{		
-		lastYPosition = transform.position.y;
 		var btnScript = btn.GetComponent<InfiniteScrollingButton> ();
 
-		if (btn == currentButton || btnScript.previousButton == btn)
-			return;
+		InstantiateButton (btn, "up");
+	}
 
-		currentButton = btn;
+	void InstantiateButton(Transform button, string whereShouldGO)
+	{
+		currentButton = button;
 
-		lastYPosition = transform.position.y;
-
-		btnScript.nextButton.GetComponent<InfiniteScrollingButton> ().Awake ();
-		btnScript.previousButton.GetComponent<InfiniteScrollingButton> ().Awake ();
-
-		transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
+		button.GetComponent<InfiniteScrollingButton>().Start ();
 
 		var b = Instantiate (currentButton,transform);
-		b.SetAsFirstSibling ();
 
-
+		if (whereShouldGO == "up") 
+		{
+			b.GetComponent<InfiniteScrollingButton> ().nextButton = currentButton;			
+			b.SetAsFirstSibling ();
+		} 
+		else 
+		{
+			b.GetComponent<InfiniteScrollingButton> ().previousButton = currentButton;
+			b.SetAsLastSibling ();
+		}
 	}
 }

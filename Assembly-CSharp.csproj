@@ -59,9 +59,9 @@
      <Compile Include="Assets\Scripts\Buttons\PopUp\PopUpButton.cs" />
      <Compile Include="Assets\Scripts\Buttons\SideMenu\InfiniteScrollingButton.cs" />
      <Compile Include="Assets\Scripts\Buttons\SideMenu\InfiniteScrollingManager.cs" />
+     <Compile Include="Assets\Scripts\Buttons\SideMenu\SideMenuButtonUnit.cs" />
      <Compile Include="Assets\Scripts\Buttons\SideMenu\SideMenuManager.cs" />
      <Compile Include="Assets\Scripts\Buttons\SubMenuButton.cs" />
-     <Compile Include="Assets\Scripts\ButtonTeleport.cs" />
      <Compile Include="Assets\Scripts\Content\ContentAnimation.cs" />
      <Compile Include="Assets\Scripts\Content\ContentManager.cs" />
      <Compile Include="Assets\Scripts\PinchZoom.cs" />
