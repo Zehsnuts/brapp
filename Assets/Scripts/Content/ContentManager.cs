@@ -10,19 +10,13 @@ public class ContentManager : MonoBehaviour
 	}
 
 	public List<Transform> contents;
-	private contentList _currentContentList;
 
 	private Transform _currentContent;
-
-	void Start()
-	{
-		_currentContentList = contentList.None;
-	}
 
 	public void ChangeContent(string btnName)
 	{
 		string[] nm = btnName.Split ("_"[0]);
-			ContentAnimation (nm[1]);
+			ContentAnimation (nm[2]);
 	}
 
 	public void ContentAnimation(string name)

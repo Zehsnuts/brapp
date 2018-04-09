@@ -6,11 +6,6 @@ public class SubMenuButton : MonoBehaviour {
 
 	public GameObject content;
 
-	void Start () 
-	{
-		
-	}
-	
 
 	public void OnClick () 
 	{

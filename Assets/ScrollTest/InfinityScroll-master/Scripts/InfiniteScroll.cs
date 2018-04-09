@@ -100,7 +100,7 @@ public abstract class InfiniteScroll : ScrollRect
 					Add (ref itemTypeStart);
 				} else if (GetPos (child) < -(GetDimension (t.sizeDelta) + GetSize (child))) {
 					Destroy (child.gameObject);
-					Subtract (ref itemTypeEnd);
+					Subtract (ref itemTypeEnd); 
 				}
 			}
 		}
@@ -114,6 +114,7 @@ public abstract class InfiniteScroll : ScrollRect
 
 		content.localPosition += (Vector3)GetVector (GetSize (newItem));
 		dragOffset += GetVector (GetSize (newItem));
+        newItem.GetComponent<ButtonScalling>().ChangeSize();
 		return newItem;
 	}
 
@@ -121,6 +122,7 @@ public abstract class InfiniteScroll : ScrollRect
 	{
 		RectTransform newItem = InstantiateNextItem (itemTypeEnd);
 		Add (ref itemTypeEnd);
+        newItem.GetComponent<ButtonScalling>().ChangeSize();
 		return newItem;
 	}
 
@@ -149,7 +151,6 @@ public abstract class InfiniteScroll : ScrollRect
 			OnBeginDrag (eventData);
 			dragOffset = Vector2.zero;
 		}
-
 		base.OnDrag (eventData);
 	}
 	#endregion

@@ -6,12 +6,9 @@ public class PopUpButton : MonoBehaviour {
 
 	public GameObject popupScreen;
 
-
-	// Use this for initialization
 	void Start () 
-	{	
-		
-		popupScreen.SetActive (false);
+	{		
+        popupScreen.SetActive (false);
 	}
 	
 	public void OpenPopUp()
