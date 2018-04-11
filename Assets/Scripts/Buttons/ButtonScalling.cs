@@ -30,9 +30,9 @@ public class ButtonScalling : MonoBehaviour {
 		Vector3 dif = new Vector3 ((1 - (dist/1000)), 1 - (dist/1000), 1 - (dist/1000));
 		if (dif.y >= 0.3f)
 			image.localScale = dif;
-        
-		if (dif.y < 0.3f)
-			image.localScale = new Vector3 (0.3f, 0.3f, 0.3f);
+
+
+        image.position = new Vector3(100 - (dist / 8), image.position.y, image.position.z);
 	}
 
 	public void assingButtonAsTarget()

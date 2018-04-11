@@ -18,7 +18,7 @@ public class SideMenuManager : MonoBehaviour {
         _scrollThroughMenu = false;
         _isMenuOpen = true;
 
-        StartCoroutine(WaitBeforeScrollingMenu());
+        //StartCoroutine(WaitBeforeScrollingMenu());
 	}
 
 	private void Update()

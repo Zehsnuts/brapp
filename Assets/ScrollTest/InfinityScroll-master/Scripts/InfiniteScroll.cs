@@ -114,7 +114,6 @@ public abstract class InfiniteScroll : ScrollRect
 
 		content.localPosition += (Vector3)GetVector (GetSize (newItem));
 		dragOffset += GetVector (GetSize (newItem));
-        newItem.GetComponent<ButtonScalling>().ChangeSize();
 		return newItem;
 	}
 
@@ -122,7 +121,6 @@ public abstract class InfiniteScroll : ScrollRect
 	{
 		RectTransform newItem = InstantiateNextItem (itemTypeEnd);
 		Add (ref itemTypeEnd);
-        newItem.GetComponent<ButtonScalling>().ChangeSize();
 		return newItem;
 	}
 

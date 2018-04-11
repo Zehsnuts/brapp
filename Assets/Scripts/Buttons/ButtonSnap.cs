@@ -17,12 +17,12 @@ public class ButtonSnap : MonoBehaviour
 		targetButton = button;
 
 		initialDistanceButtonToCenter = Vector3.Distance(button.position, menuCenter.position);
-		FindObjectOfType<ContentManager> ().ChangeContent (targetButton.name);
-		FindObjectOfType<SideMenuManager> ().CloseSideMenu ();
+		//FindObjectOfType<ContentManager> ().ChangeContent (targetButton.name);
+		//FindObjectOfType<SideMenuManager> ().CloseSideMenu ();
 	}
 
 	public float speed = 0f;
-	public float ac = 0.03f;
+	public float ac = 2f;
 	public float maxSpeed = 1000f;
 	public float minSpeed = 1f;
 
@@ -48,14 +48,14 @@ public class ButtonSnap : MonoBehaviour
 			speed -= ac*1.2f;
 
 		//For better precision, change distButtonToCenter < X
-		if (distButtonToCenter < 10f) 
+		if (distButtonToCenter < 40f) 
 		{
 			shouldMoveToPosition = false;
 			speed = 0;
 		}
 
 		//Debug.Log (distButtonToCenter);
-		//Debug.Log("Distance to Button: "+ distButtonToCenter +"\n " + initialDistanceButtonToCenter / 2);
+		Debug.Log("Distance to Button: "+ distButtonToCenter +"\n " + initialDistanceButtonToCenter / 2);
 	}
 		
 }
