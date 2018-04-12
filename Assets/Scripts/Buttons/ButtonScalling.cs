@@ -27,12 +27,13 @@ public class ButtonScalling : MonoBehaviour {
             return;
         
 		float dist = Vector2.Distance(parent.transform.position, transform.position);
+
 		Vector3 dif = new Vector3 ((1 - (dist/1000)), 1 - (dist/1000), 1 - (dist/1000));
-		if (dif.y >= 0.3f)
+
+		if (dif.y >= 0.1f)
 			image.localScale = dif;
 
-
-        image.position = new Vector3(100 - (dist / 8), image.position.y, image.position.z);
+        image.localPosition = new Vector3(100 - (dist / 7), image.localPosition.y, image.localPosition.z);
 	}
 
 	public void assingButtonAsTarget()

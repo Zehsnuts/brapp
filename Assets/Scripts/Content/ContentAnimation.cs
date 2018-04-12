@@ -41,7 +41,7 @@ public class ContentAnimation : MonoBehaviour {
 
 		if (_hasSubMenu && !_isSubMenuOpen) 
 		{
-			_subMenuAnimator.Play ("OpenContent");
+            _subMenuAnimator.Play ("OpenContent");
 			_animator.Play ("CloseContent");
 			_isSubMenuOpen = true;
 		}

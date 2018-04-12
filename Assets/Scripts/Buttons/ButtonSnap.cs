@@ -11,14 +11,22 @@ public class ButtonSnap : MonoBehaviour
 
 	float initialDistanceButtonToCenter=0;
 
+    private ContentManager _contentManager;
+
+	private void Start()
+	{
+        _contentManager = FindObjectOfType<ContentManager>();
+    }
+
 	public void assignTargetButton(Transform button)
 	{
 		shouldMoveToPosition = true;
 		targetButton = button;
 
 		initialDistanceButtonToCenter = Vector3.Distance(button.position, menuCenter.position);
-		//FindObjectOfType<ContentManager> ().ChangeContent (targetButton.name);
-		//FindObjectOfType<SideMenuManager> ().CloseSideMenu ();
+
+        _contentManager.ChangeContent (targetButton.name);
+		FindObjectOfType<SideMenuManager> ().CloseSideMenu ();
 	}
 
 	public float speed = 0f;
@@ -55,7 +63,7 @@ public class ButtonSnap : MonoBehaviour
 		}
 
 		//Debug.Log (distButtonToCenter);
-		Debug.Log("Distance to Button: "+ distButtonToCenter +"\n " + initialDistanceButtonToCenter / 2);
+		//Debug.Log("Distance to Button: "+ distButtonToCenter +"\n " + initialDistanceButtonToCenter / 2);
 	}
 		
 }
