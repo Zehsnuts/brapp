@@ -8,7 +8,7 @@ public class SideMenuManager : MonoBehaviour {
     public Transform menuAnimator;
 	private Animator _sideMenuAnimator;
 
-    private bool _isMenuOpen;
+    public bool _isMenuOpen;
 
     private bool _scrollThroughMenu;
 
@@ -31,7 +31,7 @@ public class SideMenuManager : MonoBehaviour {
 
     public void OpenOrCloseMenu()
     {
-        if (_isMenuOpen)
+        if (!_isMenuOpen)
             OpenSideMenuWithIdle();
         else
             CloseSideMenu();
@@ -40,9 +40,13 @@ public class SideMenuManager : MonoBehaviour {
 
 	public void OpenSideMenu()
 	{
+        if (_isMenuOpen)
+            return;
+        
+        _isMenuOpen = true;
 		_sideMenuAnimator.Play ("OpenSideMenu");       
 
-        StartCoroutine(WaitingToCloseMenu());
+        //StartCoroutine(WaitingToCloseMenu());
 	}
 
     public void OpenSideMenuWithIdle()
@@ -54,7 +58,12 @@ public class SideMenuManager : MonoBehaviour {
     //
 	public void CloseSideMenu()
 	{
+        if (!_isMenuOpen)
+            return;
+
 		_sideMenuAnimator.Play ("CloseSideMenu");
+
+        _isMenuOpen = false;
 
         StopMenuScrolling();
 

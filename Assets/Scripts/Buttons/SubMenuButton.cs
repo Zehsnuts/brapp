@@ -8,7 +8,7 @@ public class SubMenuButton : MonoBehaviour {
 
 
 	public void OnClick () 
-	{
+    {
 		content.GetComponent<ContentAnimation> ().OpenContent ();
 	}
 }

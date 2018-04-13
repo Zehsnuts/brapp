@@ -30,7 +30,7 @@ public class ButtonSnap : MonoBehaviour
 	}
 
 	public float speed = 0f;
-	public float ac = 2f;
+	public float ac = 3f;
 	public float maxSpeed = 1000f;
 	public float minSpeed = 1f;
 
@@ -56,7 +56,7 @@ public class ButtonSnap : MonoBehaviour
 			speed -= ac*1.2f;
 
 		//For better precision, change distButtonToCenter < X
-		if (distButtonToCenter < 40f) 
+		if (distButtonToCenter < 50f) 
 		{
 			shouldMoveToPosition = false;
 			speed = 0;

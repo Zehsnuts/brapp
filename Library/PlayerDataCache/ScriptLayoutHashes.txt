@@ -1,6 +1,6 @@
 WindowsStandalone
 SceneListBegin?
-Assets/Scenes/Hub.unity
+Assets/Scenes/Main.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.UI.TextureSwitch
 70d9a5dfdd92296522528a98d2f5ed68 Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.PenCursor
@@ -121,7 +121,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 f2448ffab61c9c2c56a2ea349a790ec8 Assembly-CSharp.dll:UnityEngine.UI.Extensions.SelectionBox
-8d58b1afb903137d0090931c00f0849d Assembly-CSharp.dll:.ContentManager
+7b1b00c659308dd968d666d7a1f6d9d8 Assembly-CSharp.dll:.ContentManager
 76a96007fccaaf7a34db16cccf85aa97 Assembly-CSharp.dll:TouchScript.Examples.Tap.Break
 7d0aa0f64a823db9982e4fed92870a4c Assembly-CSharp.dll:UnityEngine.UI.Extensions.RescalePanel
 9345d3d4250251bee43a1894fd3f6180 Assembly-CSharp.dll:TouchScript.Hit.Untouchable
@@ -252,7 +252,7 @@ a36d6541b3ca9c61d7938dcd4cc9cdf0 Assembly-CSharp.dll:UnityEngine.UI.Extensions.L
 cde49f8b65b330a3d5a092cd8f503d03 Assembly-CSharp.dll:UnityEngine.UI.Extensions.InputFieldEnterSubmit
 fad27ea0ea956c43ddd9bb79445f68f0 Assembly-CSharp.dll:.InfiniteVerticalScroll
 637d9c63f1b13e88562f25a79473a1f9 Assembly-CSharp.dll:UnityEngine.UI.Extensions.TileSizeFitter
-af00f1412b2b97223f732c9f359f6ae2 Assembly-CSharp.dll:.SideMenuManager
+cd45b14811cbc635ff52c43cf55082e7 Assembly-CSharp.dll:.SideMenuManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -264,7 +264,6 @@ b0c6d2a843b707983a659d0302bba6ba Assembly-CSharp.dll:UnityEngine.UI.Extensions.C
 5eeacec8e729f2f59963b7cac59021a8 Assembly-CSharp.dll:TouchScript.Layers.FullscreenLayer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 9dc41ecfefe71e0d0e207b5650949483 Assembly-CSharp.dll:TouchScript.Devices.Display.GenericDisplayDevice
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ButtonInstance
 22655162d31180e3a0c1329d6473a2da Assembly-CSharp.dll:.HourDateDay
 257e7db485b6dd0c687101247ab95a1b Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.TouchCursor
 a6dc623575719f7f6901ed47b413603b Assembly-CSharp.dll:UnityEngine.UI.Extensions.HexRGB
@@ -303,3 +302,5 @@ fad27ea0ea956c43ddd9bb79445f68f0 Assembly-CSharp.dll:.InfiniteHorizontalScroll
 354799ab7253e8d83914c27d4dc65f56 Assembly-CSharp.dll:TouchScript.Examples.Portal.Spawner
 59a66ea364a78dcebd50a06375f2a04b Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.PinnedTransformGesture
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.LayerManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ClickManager
+0b050d198ff7ea1b936ad1f58b3a7175 Assembly-CSharp.dll:.ContentZoom

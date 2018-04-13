@@ -30,8 +30,8 @@ public class ContentManager : MonoBehaviour
 			
         Debug.Log (content.name);
 
-		if (content == _currentContent)
-			return;
+		//if (content == _currentContent)
+			//return;
 
 		if (_currentContent != null)
 			_currentContent.GetComponent<ContentAnimation> ().CloseContent ();
