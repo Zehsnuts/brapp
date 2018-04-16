@@ -25,8 +25,6 @@ public class SideMenuManager : MonoBehaviour {
 	{
         if (!_scrollThroughMenu)
             return;
-
-        sideMenu.transform.position += new Vector3(0, 50f * Time.deltaTime, 0);
 	}
 
     public void OpenOrCloseMenu()
@@ -52,7 +50,7 @@ public class SideMenuManager : MonoBehaviour {
     public void OpenSideMenuWithIdle()
     {
         _sideMenuAnimator.Play ("OpenSideMenu");   
-        StartCoroutine(WaitBeforeScrollingMenu());
+        //StartCoroutine(WaitBeforeScrollingMenu());
     }
 
     //
@@ -67,7 +65,7 @@ public class SideMenuManager : MonoBehaviour {
 
         StopMenuScrolling();
 
-        StopCoroutine(WaitingToCloseMenu());
+        //StopCoroutine(WaitingToCloseMenu());
 	}
 
     IEnumerator WaitingToCloseMenu()
@@ -76,10 +74,9 @@ public class SideMenuManager : MonoBehaviour {
         CloseSideMenu();
     }
 
-    void StopMenuScrolling()
+    public void StopMenuScrolling()
     {
-        _scrollThroughMenu = false;
-        StopCoroutine(WaitBeforeScrollingMenu());
+        FindObjectOfType<IdleScrolling>().StopAutoScroll();
     }
 
     //Counter to begin scrolling automatically through menu

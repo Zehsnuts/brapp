@@ -44,6 +44,9 @@ public class ClickManager : MonoBehaviour {
                 if(result.gameObject.name == "zoomableImage")
                     result.gameObject.transform.GetComponent<ContentZoom>().ClickOnImage();
 
+                if (result.gameObject.name == "SideMenuButtons" || result.gameObject.name == "SideMenu")
+                    FindObjectOfType<SideMenuManager>().StopMenuScrolling();
+
                 //Debug.Log("Hit " + result.gameObject.name);
             }
         }

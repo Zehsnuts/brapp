@@ -2594,7 +2594,7 @@ GameObject:
   - component: {fileID: 217697195}
   - component: {fileID: 217697197}
   m_Layer: 0
-  m_Name: Buttons
+  m_Name: SideMenuButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9635,6 +9635,7 @@ GameObject:
   - component: {fileID: 985895565}
   - component: {fileID: 985895567}
   - component: {fileID: 985895568}
+  - component: {fileID: 985895569}
   m_Layer: 0
   m_Name: SideMenu
   m_TagString: Untagged
@@ -9726,6 +9727,25 @@ MonoBehaviour:
   sideMenu: {fileID: 985895564}
   menuAnimator: {fileID: 985895564}
   _isMenuOpen: 0
+--- !u!114 &985895569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985895563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebcd0740d97a1845bfd8b8d1f7c03c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollTarget: {fileID: 217697194}
+  scrollSpeed: 0
+  scrollAcceleration: 5
+  maxSpeed: 75
+  maxY: 4700
+  minY: 1400
+  shouldScroll: 1
+  shouldGoUp: 1
 --- !u!1 &1004816548
 GameObject:
   m_ObjectHideFlags: 0
